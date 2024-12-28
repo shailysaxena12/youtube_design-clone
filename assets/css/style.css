@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.navigation {
+    background-color:#000000;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    /* border: 4px solid goldenrod; */
+    cursor: pointer;
+}
+nav img {
+    width: 30px;
+    height: 30px;
+}
+
+nav>.logo {
+    width: 18%;
+    height: 70%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    /* gap: 5px; */
+}
+nav>.logo>.logoimg {
+    width: 150px;
+    height: 25px;
+    /* background-color: blueviolet; */
+    margin-right: 40px;
+}
+nav >.searchbar {
+    width: 45%;
+    height: 75%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+nav >.searchbar >.search{
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 570px;
+  border-radius: 30px;
+ 
+}
+nav >.searchbar >.search input {
+  width: 670px;
+  height: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: #121212;
+  padding-left: 30px;
+  border: 2px solid transparent;
+ font-size: 20px;
+}
+nav >.searchbar >.search i{
+  width: 80px;
+  height:44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 1px solid #ffffff14 ;
+}
+nav>.searchbar>.mic {
+    width: 45px;
+    height: 45px;
+    /* margin-left: 10px; */
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffffff14;
+    border: transparent;
+}
+
+nav>.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    height: 70%;
+    /* border: 2px solid blue; */
+    color: white;
+}
+
+nav>.info>img {
+    width: 50px;
+    height: 40px;
+    border: 2px solid transparent;
+}
+
+nav .info>.createbtn {
+    background-color: #ffffff14;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+nav .info >.createbtn:hover{
+    background-color: #222;
+}
+nav>.info>.fa-bell {
+    background-color: #ffffff14;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+ nav >.info >.fa-bell:hover{
+    background-color:#222;
+ }
+
+nav>.info>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* navbar */
+/* herosection */
+.herosection{
+    width: 100%;
+    padding-top: 10px;
+    background-color: black;
+    display: flex;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.herosection  .leftdiv{
+   width: 240px;
+   height: calc(100vh - 60px);
+   overflow: auto;
+   padding: 0 1rem;
+}
+.herosection  .leftdiv .links{
+    padding: 0 0 .5rem;
+    margin-bottom: .5rem;
+    border-bottom: thin solid #222;
+ }
+.herosection .leftdiv .link {
+    display: flex;
+    gap: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+.herosection .leftdiv .links .headinglink{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.herosection .leftdiv .link:hover{
+    background-color: #222;
+}
+.herosection .leftdiv .link img{
+    display: block;
+    height: 25px;
+    width:  25px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    object-fit: fill; 
+}
+/* herosection right div */
+.herosection >.rightdiv{
+    width: calc(100% - 240px);
+   height: calc(100vh - 60px);
+   overflow: auto;
+    /* background-color:pe; */
+}
+.nav-bar{
+    /* border: 2px solid; */
+    width: 100%;
+    height: 43px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:black;
+    position: sticky;
+    top: 0;
+   /* background-color: aqua; */
+  }
+  .nav-bar >.btn{
+    margin: 0px 0px;
+    padding: 5px 11px;
+    border-radius: 10px;
+    background-color: rgb(33, 37, 41);
+    color:  white;
+    /* border: 1px solid #ffffff14;  */
+    gap:5px;
+  }
+  .nav-bar >.btn:hover{
+    background-color: white;
+    color: black;
+  }
+
+  /* hero navbar */
+  /* cards */
+  .herosection >.rightdiv >.cards{
+    width: 100%;
+    /* height: 1500px; */
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: repeat(3,399px);
+    grid-template-rows: repeat(3,375px);
+    justify-content: space-evenly;
+    align-content: center;
+
+  }
+  .herosection >.rightdiv >.cards >.card{
+    /* border: 5px solid blue; */
+    width: 100%;
+    height: 87%;
+    background-color:black;
+    border-radius: 25px;
+  }
+  
+  .herosection >.rightdiv >.cards >.card > img{
+    width: 399px;
+    height: 260px;
+    border-radius: 25px;
+    background-position: 100% 100%;
+    object-fit: contain;
+  
+  }
+  .herosection >.rightdiv >.cards >.card > .imgtxt{
+    width: 100%;
+    height: 40%;
+   /* background-color:blue; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* padding: 8px 15px; */
+  }
+  .herosection >.rightdiv >.cards >.card >.imgtxt >.imgcontent{
+    /* background-color: aquamarine; */
+    width: 90%;
+    height: 65px;
+    padding-left: 20px;
+  }
+  .herosection >.rightdiv >.cards >.card >.imgtxt >.imgcontent h6{
+    color: white;
+    font-size: 16px;
+  }
+  .herosection >.rightdiv >.cards >.card >.imgtxt >.imgcontent p{
+    font-size: 14px;
+    color: #AAAA;
+  }
+  
+  .herosection >.rightdiv >.cards >.card > .imgtxt img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-position: center;
+    /* padding-bottom: 10px; */
+  }
+  .rightdiv .navbar{
+    scroll-behavior: smooth;
+  }
+  .rightdiv .navbar .container {
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+  .rightdiv .navbar .container button{
+   
+   text-wrap: nowrap;
+   word-wrap: nowrap;
+}
+.rightdiv .navbar .container::-webkit-scrollbar{
+    display: none;
+}
